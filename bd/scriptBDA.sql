@@ -1,1 +1,0 @@
-CREATE DATABASE BDA_Equipo2;
