@@ -43,3 +43,12 @@ body {
     text-decoration: none; 
   }
   
+  /*Para cambiar el estilo del texto ultima fecha de actualizacion*/
+  ultimaFecha {
+    position: fixed;
+    bottom: 0;
+    /*left: 50%;*/
+    margin: 0;
+    padding: 7px;
+    background-color: #89ad89;
+  }

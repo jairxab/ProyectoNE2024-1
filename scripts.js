@@ -24,3 +24,13 @@ function imageSlider() {
   document.addEventListener('DOMContentLoaded', function() {
     imageSlider();
   });
+
+
+  /*Función que permite ver la ultima actualizacion del sitio web*/
+  document.addEventListener("DOMContentLoaded", function() {
+    var fechaActualizacion = new Date(document.lastModified);
+    var fechaFormateada = fechaActualizacion.toLocaleString();
+    var ultimaFecha = document.createElement("ultimaFecha");
+    ultimaFecha.innerHTML = "Última actualización: " + fechaFormateada;
+    document.body.appendChild(ultimaFecha);
+  });
