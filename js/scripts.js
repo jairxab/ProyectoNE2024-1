@@ -37,3 +37,4 @@ function imageSlider() {
     "/" + mes + "/" + anio;
     document.body.appendChild(ultimaFecha);
   });
+
