@@ -29,8 +29,11 @@ function imageSlider() {
   /*Función que permite ver la ultima actualizacion del sitio web*/
   document.addEventListener("DOMContentLoaded", function() {
     var fechaActualizacion = new Date(document.lastModified);
-    var fechaFormateada = fechaActualizacion.toLocaleString();
+    var dia = fechaActualizacion.getDate();
+    var mes = fechaActualizacion.getMonth() + 1;
+    var anio = fechaActualizacion.getFullYear();
     var ultimaFecha = document.createElement("ultimaFecha");
-    ultimaFecha.innerHTML = "Última actualización: " + fechaFormateada;
+    ultimaFecha.innerHTML = "Última actualización: " + dia + 
+    "/" + mes + "/" + anio;
     document.body.appendChild(ultimaFecha);
   });
