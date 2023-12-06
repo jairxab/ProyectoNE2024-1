@@ -1,8 +1,8 @@
 <?php
   $host = 'localhost';
   $usuario = 'root';
-  $contraseña = '';
-  $base_de_datos = 'BDAequipo2';
+  $contraseña = 'Equipo2NE';
+  $base_de_datos = 'BDA_Equipo2';
 
   $conexion = new mysqli($host, $usuario, $contraseña, $base_de_datos);
 
