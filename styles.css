@@ -1,0 +1,45 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Para que ocupe al menos el 100% de la altura de la ventana */
+  }
+  
+  /* Estilos adicionales para centrar el encabezado y el pie de página */
+  header, footer {
+    text-align: center;
+  }
+
+#TituloOfertas{
+    text-align: center;
+}
+
+body {
+    font-family: 'MiFuentePersonalizada', sans-serif;
+    background-color: #E1E5e8;
+}
+
+/*Para el menú de opciones*/
+#menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    display: inline; /* Esto coloca los elementos en línea */
+    margin-right: 25px; /* Agrega espacio entre los elementos */
+}
+
+#menu a {
+    text-decoration: none; /* Esto quita el subrayado */
+    color: black; /* o cualquier color que prefieras */
+  }
+  
+/* Cambia el aspecto de los enlaces al pasar el ratón sobre ellos */
+#menu a:hover {
+    color: grey; /* o cualquier color para el efecto hover */
+    text-decoration: none; 
+  }
+  
