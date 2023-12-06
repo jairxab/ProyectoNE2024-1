@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+<h1>Procesando mensaje</h1>
+
 <?php
 
 // Configuraciones de la base de datos
@@ -65,5 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 // Cierra la conexión a la base de datos
 $conexion->close();
-
+echo "<h3>Gracias por su preferencia</h3>";
 ?>
+</html>  
+</body>
