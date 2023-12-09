@@ -96,3 +96,12 @@ function imageSlider() {
     const carritoSection = document.querySelector("#carrito");
     carritoSection.appendChild(carritoTotal);
   });
+
+/*Cuando se pulsa el boton Enviar en Contacto*/
+document.addEventListener("DOMContentLoaded", function () {
+  const enviarButton = document.getElementById("enviarButton");
+
+  enviarButton.addEventListener("click", function () {
+    alert("Solicitud enviada correctamente");
+  });
+});
