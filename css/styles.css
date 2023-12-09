@@ -5,18 +5,6 @@
     justify-content: center;
     min-height: 100vh; /* Para que ocupe al menos el 100% de la altura de la ventana */
   }
-
-  #text-box {
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: left;
-    border: 3px solid #000;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    border-radius: 5px;
-}
   
   /* Estilos adicionales para centrar el encabezado y el pie de página */
   header, footer {
@@ -32,9 +20,11 @@ body {
     background-color: #E1E5e8;
 }
 
-#menu li {
-    display: inline; /* Esto coloca los elementos en línea */
-    margin-right: 25px; /* Agrega espacio entre los elementos */
+#menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  
 }
 
 #menu a {
@@ -61,6 +51,18 @@ ultimaFecha {
 
 #TextoContacto{
   text-align: center;
+}
+
+#text-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+  border: 3px solid #000;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  border-radius: 5px;
 }
 
 #headerGeneral {
