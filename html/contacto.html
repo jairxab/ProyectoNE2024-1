@@ -20,19 +20,21 @@
   </header>
   <main>
     <h2 id="TextoContacto">Suscríbete a nuestro boletín para recibir recomendaciones de productos y grandes ofertas.</h2>
-    <form action="../registros/registros.php" method="post">
-      <div class="campo">
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre" required><br>
-        <label for="apellido">Apellido:</label>
-        <input type="text" name="apellido" id="apellido" required><br>
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" name="telefono" id="telefono" required><br>
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" name="correo" id="correo" required>
-      </div><br>
-      <input type="submit" value="Enviar">
-    </form>
+    <div class="containerFormulario">
+      <form action="../registros/registros.php" method="post">
+        <div class="campo">
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" id="nombre" required><br>
+          <label for="apellido">Apellido:</label>
+          <input type="text" name="apellido" id="apellido" required><br>
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" name="telefono" id="telefono" required><br>
+          <label for="correo">Correo electrónico:</label>
+          <input type="email" name="correo" id="correo" required>
+        </div><br>
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
   </main>
   <br><br>
   <div id="logosContainer">

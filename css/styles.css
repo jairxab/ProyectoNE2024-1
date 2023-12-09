@@ -73,14 +73,22 @@ ultimaFecha {
   width: 100%;
 }
 
+
 #headerLeft {
-  display: flex;
-  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0); /* Fondo transparente */
+  padding: 0; 
+  max-width:fit-content;
 }
 
-#headerLeft h4 {
-  margin: 0; 
-  padding: 0px; 
+.name-box {
+  border: 2px solid #1c5347; 
+  padding: 0; 
+  border-radius: 5px;
+}
+
+.name-box h4 {
+  margin: 0;
+  padding: px;
 }
 
 #h1General{
@@ -176,4 +184,23 @@ footer{
   display: flex;
   justify-content: center; 
   align-items: center; 
+}
+
+/*Para el apartado del campo del formulario*/
+#containerFormulario {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+}
+
+form {
+  background-color: #f0f0f0; /* Color de fondo del formulario */
+  padding: 20px; 
+  border-radius: 5px; 
+  text-align: center;
+}
+
+label,input {
+  margin-bottom: 10px; 
 }
