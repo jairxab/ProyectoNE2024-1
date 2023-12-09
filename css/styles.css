@@ -68,18 +68,6 @@ ultimaFecha {
   text-align: center;
 }
 
-#text-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  text-align: left;
-  border: 3px solid #000;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  border-radius: 5px;
-}
-
 #headerGeneral {
   background-color: #89ad89;
   border-radius: 10px;
