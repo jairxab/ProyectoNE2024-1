@@ -70,7 +70,10 @@ ultimaFecha {
   text-align: center;
 }
 
-#headerIndex{
+#headerGeneral {
   background-color: #89ad89;
   border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
 }
