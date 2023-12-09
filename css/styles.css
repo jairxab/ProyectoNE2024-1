@@ -8,10 +8,11 @@
 
 /*Cuadro de texto donde se almacenan nuestros nombres*/
 #text-box{
-  position: absolute;
+  position:absolute;
   top: 0;
   left: 0;
   text-align: left;
+  border: 3px solid #000; 
 }
   
   /* Estilos adicionales para centrar el encabezado y el pie de página */
