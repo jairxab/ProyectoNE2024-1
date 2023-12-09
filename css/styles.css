@@ -151,3 +151,19 @@ footer{
 #carrito input[type="button"]:hover {
   background-color: #0056b3;
 }
+
+/* Para los logos */
+#logo1Contacto {
+  margin-right: 20px; /* Espacio entre los logos */
+}
+
+#logo2Contacto {
+  margin-left: 20px; /* Espacio entre los logos */
+}
+
+/* Contenedor para centrar los logos */
+#logosContainer {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
