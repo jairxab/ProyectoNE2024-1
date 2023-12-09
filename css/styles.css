@@ -73,6 +73,16 @@ ultimaFecha {
   width: 100%;
 }
 
+#headerLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+#headerLeft h4 {
+  margin: 0; 
+  padding: 0px; 
+}
+
 #h1General{
   text-align: center;
   margin-left: auto;

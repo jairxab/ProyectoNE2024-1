@@ -82,19 +82,17 @@ function imageSlider() {
     });
 
     pagarButton.addEventListener("click", () => {
-      // Aquí puedes agregar la lógica para el proceso de pago si es necesario.
-      // Por ejemplo, redirigir a una página de pago.
+      alert("Compra exitosa");
+      checkboxes.forEach((checkbox) => {
+        checkbox.checked = false;
+      });
+      cantidadInputs.forEach((input) => {
+        input.value = 0;
+      });
+      total = 0;
+      carritoTotal.textContent = "Costo total: $" + total;
     });
 
     const carritoSection = document.querySelector("#carrito");
     carritoSection.appendChild(carritoTotal);
   });
-
-/*Función para el botón Pagar*/
-document.addEventListener("DOMContentLoaded", function () {
-  const pagarButton = document.querySelector("#carrito input[value='Pagar']");
-  
-  pagarButton.addEventListener("click", function () {
-    alert("Compra exitosa");
-  });
-});
