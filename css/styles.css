@@ -61,10 +61,16 @@ ultimaFecha {
     bottom: 0;
     /*left: 50%;*/
     margin: 0;
+    border-radius: 10px;
     padding: 7px;
     background-color: #89ad89;
   }
 
 #TextoContacto{
   text-align: center;
+}
+
+#headerIndex{
+  background-color: #89ad89;
+  border-radius: 10px;
 }
