@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulario de suscripción</title>
+  <title>Contacto</title>
   <link rel="stylesheet" type="text/css" href="../css/styles.css">
   <script src="../js/scripts.js"></script>
 </head>
 <body>
   <header>
-    <h1>Formulario de suscripción</h1>
+    <h1>Contacto</h1>
     <nav>
       <ul id="menu">
         <li><button><a href="index.html">Inicio</a></button></li>
@@ -21,24 +21,24 @@
     </nav>
   </header>
   <main>
-    <h2>Suscríbete a nuestro boletín para recibir recomendaciones de productos y grandes ofertas.</h2>
+    <h2 id="TextoContacto">Suscríbete a nuestro boletín para recibir recomendaciones de productos y grandes ofertas.</h2>
     <form action="../registros/registros.php" method="post">
       <div class="campo">
         <label for="nombre">Nombre:</label>
         <input type="text" name="nombre" id="nombre" required>
-      </div>
+      </div><br>
       <div class="campo">
         <label for="apellido">Apellido:</label>
         <input type="text" name="apellido" id="apellido" required>
-      </div>
+      </div><br>
       <div class="campo">
         <label for="telefono">Teléfono:</label>
         <input type="tel" name="telefono" id="telefono" required>
-      </div>
+      </div><br>
       <div class="campo">
         <label for="correo">Correo electrónico:</label>
         <input type="email" name="correo" id="correo" required>
-      </div>
+      </div><br>
       <input type="submit" value="Enviar">
     </form>
   </main>
