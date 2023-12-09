@@ -109,12 +109,20 @@ footer{
 }
 
 .producto {
-  margin: 20px;
-  flex-basis: calc(33.333% - 20px); /* Ajusta el porcentaje y el margen según tus necesidades */
+  display: flex;
+  align-items: center; /* Centra verticalmente el contenido */
+  margin-bottom: 20px;
 }
 .producto img {
-  width: 100vw;
-  max-width: 150px;
+  max-width: 100px; /* Establece el ancho máximo de la imagen */
+  margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+/* Alinea el checkbox alineado verticalmente en el medio */
+.opciones-producto {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
 }
 
 /*Para el apartado del carrito de compras*/
