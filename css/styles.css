@@ -187,20 +187,49 @@ footer{
 }
 
 /*Para el apartado del campo del formulario*/
-#containerFormulario {
+.containerFormulario {
   display: flex;
   justify-content: center; 
   align-items: center; 
   height: 100vh; 
+  margin-top: -170px;
 }
 
 form {
   background-color: #f0f0f0; /* Color de fondo del formulario */
   padding: 20px; 
-  border-radius: 5px; 
+  border-radius: 10px; 
   text-align: center;
 }
 
 label,input {
   margin-bottom: 10px; 
+}
+
+/*Para el apartado del campo del formulario*/
+.containerGeneral {
+  background-color: #f0f0f0; /* Establece el fondo en blanco */
+  padding: 5px; 
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+/*Para los archivos media*/
+#media {
+  border-radius: 10px; /* Establece el borde redondeado */
+}
+
+#linkMas {
+  background-color: #29ad60;
+  padding: 5px 10px; /* Añade un espacio interno alrededor del enlace */
+  text-decoration: none; /* Elimina el subrayado predeterminado del enlace */
+  transition: background-color 0.3s; /* Agrega una transición suave para el cambio de color de fondo */
+  color: black;
+  font-weight: bold; 
+  border-radius: 10px;
+}
+
+#linkMas:hover {
+  background-color: #1a8b46; /* Cambia el color de fondo al pasar el mouse */
+  color: white; /* Cambia el color del texto para que sea visible en el fondo */
 }
