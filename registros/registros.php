@@ -1,3 +1,15 @@
+<html>
+  <body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script src="../js/scripts.js"></script> 
+</head>
+<h4>Suscripción exítosa. Puede volver a la página principal.</h4>
+
+
 <?php
 
 // Configuraciones de la base de datos
@@ -39,3 +51,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $conexion->close();
 
 ?>
+
+  </body>
+</html>
