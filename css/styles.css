@@ -5,6 +5,14 @@
     justify-content: center;
     min-height: 100vh; /* Para que ocupe al menos el 100% de la altura de la ventana */
   }
+
+/*Cuadro de texto donde se almacenan nuestros nombres*/
+#text-box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+}
   
   /* Estilos adicionales para centrar el encabezado y el pie de página */
   header, footer {
