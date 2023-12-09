@@ -49,7 +49,7 @@ body {
   
 /* Cambia el aspecto de los enlaces al pasar el ratón sobre ellos */
 #menu a:hover {
-    color: grey; /* o cualquier color para el efecto hover */
+    color: rgb(185, 185, 185); /* o cualquier color para el efecto hover */
     text-decoration: none; 
   }
   
