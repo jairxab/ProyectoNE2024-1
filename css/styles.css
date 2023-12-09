@@ -104,6 +104,7 @@ footer{
 
 .fila-productos {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
 }
@@ -117,6 +118,7 @@ footer{
   max-width: 150px;
 }
 
+/*Para el apartado del carrito de compras*/
 #carrito {
   background-color: #f1f1f1;
   padding: 20px;
