@@ -87,3 +87,17 @@ ultimaFecha {
 footer{
   text-align: center;
 }
+
+#textoMision{
+  text-align: center;
+}
+
+#textoAcerca{
+  text-align: center;
+}
+
+.producto img {
+  width: 100vw;
+  max-width: 150px;
+  height: auto;
+}
