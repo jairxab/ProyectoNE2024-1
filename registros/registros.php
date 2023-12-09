@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" type="text/css" href="/css/styles.css">
-</head>
-<body>
-<h1>Procesando mensaje</h1>
-
 <?php
 
 // Configuraciones de la base de datos
@@ -31,49 +23,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $telefono = $_POST["telefono"];
   $correo = $_POST["correo"];
 
-  // Comprueba si los datos del formulario son válidos
-  if (strlen($nombre) < 3) {
-    echo "El nombre debe tener al menos 3 caracteres.";
-    exit;
-  }
-
-  if (strlen($apellido) < 3) {
-    echo "El apellido debe tener al menos 3 caracteres.";
-    exit;
-  }
-
-  if (!filter_var($correo, FILTER_VALIDATE_EMAIL)) {
-    echo "El correo electrónico no es válido.";
-    exit;
-  }
-
   // Guarda los datos del formulario en la base de datos
   $consulta = $conexion->prepare("INSERT INTO usuarios (nombre, apellido, telefono, correo) VALUES (?, ?, ?, ?)");
   $consulta->execute(array($nombre, $apellido, $telefono, $correo));
 
-  // Envía un correo electrónico al usuario confirmando la suscripción
-  $para = $correo;
-  $asunto = "Confirmación de suscripción";
-  $cuerpo = "
-    Estimado/a $nombre $apellido,
+  // Obtiene el ID generado por la base de datos
+  $id = $conexion->insert_id;
 
-    Gracias por suscribirte a nuestro servicio.
-
-    Tu suscripción ha sido confirmada.
-
-    Saludos,
-
-    El equipo de [nombre de la empresa]
-  ";
-  mail($para, $asunto, $cuerpo);
-
-  echo "Suscripción confirmada.";
+  // Muestra un mensaje de registro exitoso
+  echo "Registro exitoso. Su ID es: $id";
 
 }
 
 // Cierra la conexión a la base de datos
 $conexion->close();
-echo "<h3>Gracias por su preferencia</h3>";
+
 ?>
-</html>  
-</body>

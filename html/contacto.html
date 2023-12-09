@@ -1,50 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" type="text/css" href="../css/styles.css">
-    <script src="../js/scripts.js"></script> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de suscripción</title>
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <script src="../js/scripts.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Contacto</h1>
-        <nav>
-            <ul id="menu">
-                <li><button><a href="index.html">Inicio</a></button></li>
-                <li><button><a href="productos.html">Productos</a></button></li>
-                <li><button><a href="mision.html">Misión</a></button></li>
-                <li><button><a href="contacto.html">Contacto</a></button></li>
-                <li><button><a href="acerca_de.html">Acerca de</a></button></li>
-              </ul>
-          </nav>
-    </header>
-    <main>
-        <h2>Para ofrecerle un mejor servicio, le recomendamos
-            suscribirse a nuestro servicio en el cual recibira
-            recomendaciones de productos así como grandes ofertas.
-            <br><br>Por favor llene el siguiente formulario:
-        </h2>
-        <form action="../registros/registros.php" method="post">
-            <div class="campo">
-              <label for="nombre">Nombre:</label>
-              <input type="text" name="nombre" id="nombre" required>
-            </div>
-            <div class="campo">
-              <label for="apellido">Apellido:</label>
-              <input type="text" name="apellido" id="apellido" required>
-            </div>
-            <div class="campo">
-              <label for="telefono">Teléfono:</label>
-              <input type="tel" name="telefono" id="telefono" required>
-            </div>
-            <div class="campo">
-              <label for="correo">Correo electrónico:</label>
-              <input type="email" name="correo" id="correo" required>
-            </div>
-            <input type="submit" value="Enviar">
-          </form>
-    </main>
+  <header>
+    <h1>Formulario de suscripción</h1>
+    <nav>
+      <ul id="menu">
+        <li><button><a href="index.html">Inicio</a></button></li>
+        <li><button><a href="productos.html">Productos</a></button></li>
+        <li><button><a href="mision.html">Misión</a></button></li>
+        <li><button><a href="contacto.html">Contacto</a></button></li>
+        <li><button><a href="acerca_de.html">Acerca de</a></button></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Suscríbete a nuestro boletín para recibir recomendaciones de productos y grandes ofertas.</h2>
+    <form action="../registros/registros.php" method="post">
+      <div class="campo">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required>
+      </div>
+      <div class="campo">
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido" required>
+      </div>
+      <div class="campo">
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" name="telefono" id="telefono" required>
+      </div>
+      <div class="campo">
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" name="correo" id="correo" required>
+      </div>
+      <input type="submit" value="Enviar">
+    </form>
+  </main>
 </body>
 </html>
