@@ -184,6 +184,7 @@ footer{
   display: flex;
   justify-content: center; 
   align-items: center; 
+  margin-top: -200px;
 }
 
 /*Para el apartado del campo del formulario*/
