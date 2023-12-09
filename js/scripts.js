@@ -38,3 +38,55 @@ function imageSlider() {
     document.body.appendChild(ultimaFecha);
   });
 
+
+  /*Funcion para los productos*/
+  document.addEventListener("DOMContentLoaded", function () {
+    const checkboxes = document.querySelectorAll("input[type='checkbox']");
+    const cantidadInputs = document.querySelectorAll("input[type='number']");
+    const vaciarCarritoButton = document.querySelector("#carrito input[value='Vaciar carrito']");
+    const pagarButton = document.querySelector("#carrito input[value='Pagar']");
+    const carritoTotal = document.createElement("p");
+    let total = 0;
+
+    function actualizarTotal() {
+      total = 0;
+      for (let i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].checked) {
+          total += parseInt(cantidadInputs[i].value) * parseInt(cantidadInputs[i].getAttribute("data-precio"));
+        }
+      }
+      carritoTotal.textContent = "Costo total: $" + total;
+    }
+
+    checkboxes.forEach((checkbox, index) => {
+      checkbox.addEventListener("change", () => {
+        actualizarTotal();
+      });
+    });
+
+    cantidadInputs.forEach((input) => {
+      input.addEventListener("input", () => {
+        actualizarTotal();
+      });
+    });
+
+    vaciarCarritoButton.addEventListener("click", () => {
+      checkboxes.forEach((checkbox) => {
+        checkbox.checked = false;
+      });
+      cantidadInputs.forEach((input) => {
+        input.value = 0;
+      });
+      total = 0;
+      carritoTotal.textContent = "Costo total: $" + total;
+    });
+
+    pagarButton.addEventListener("click", () => {
+      // Aquí puedes agregar la lógica para el proceso de pago si es necesario.
+      // Por ejemplo, redirigir a una página de pago.
+    });
+
+    const carritoSection = document.querySelector("#carrito");
+    carritoSection.appendChild(carritoTotal);
+  });
+
