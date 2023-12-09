@@ -23,9 +23,24 @@ body {
 #menu {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  top: -10px;
+  align-items: flex-end;
+  margin-bottom: 10px;
 }
+
+#menu button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #89ad89;
+  color: #fff;
+  cursor: pointer;
+}
+
+#menu button:hover {
+  background-color: #4b624b;
+}
+
 
 #menu a {
     text-decoration: none; /* Esto quita el subrayado */
