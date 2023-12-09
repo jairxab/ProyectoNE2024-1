@@ -31,8 +31,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $id = $conexion->insert_id;
 
   // Muestra un mensaje de registro exitoso
-  echo "Registro exitoso. Su ID es: $id";
-
+  //echo "Registro exitoso. Su ID es: $id";
+  echo '<script>toastr.success("Registro exitoso. Su ID es: ' . $id . '");</script>';
 }
 
 // Cierra la conexión a la base de datos
