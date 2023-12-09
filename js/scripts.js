@@ -90,3 +90,11 @@ function imageSlider() {
     carritoSection.appendChild(carritoTotal);
   });
 
+/*Función para el botón Pagar*/
+document.addEventListener("DOMContentLoaded", function () {
+  const pagarButton = document.querySelector("#carrito input[value='Pagar']");
+  
+  pagarButton.addEventListener("click", function () {
+    alert("Compra exitosa");
+  });
+});
