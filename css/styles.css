@@ -96,8 +96,23 @@ footer{
   text-align: center;
 }
 
+.contenedor-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.fila-productos {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.producto {
+  margin: 20px;
+  flex-basis: calc(33.333% - 20px); /* Ajusta el porcentaje y el margen según tus necesidades */
+}
 .producto img {
   width: 100vw;
   max-width: 150px;
-  height: auto;
 }
